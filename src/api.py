@@ -11,8 +11,8 @@ from .features import user_router
 def create_app() -> FastAPI:
    
     app = FastAPI(
-        title="Clean Architecture API",
-        description="API RESTful implementada con FastAPI siguiendo los principios de Clean Architecture",
+        title="API",
+        description="API",
         version="1.0.0",
         docs_url=None,  
         redoc_url=None,
@@ -66,7 +66,7 @@ def create_app() -> FastAPI:
     @app.get(f"{config.API_PREFIX}/openapi.json", include_in_schema=False)
     async def get_open_api_endpoint():
         return get_openapi(
-            title="Clean Architecture API",
+            title="API",
             version="1.0.0",
             description="API RESTful con Clean Architecture y FastAPI",
             routes=app.routes,
