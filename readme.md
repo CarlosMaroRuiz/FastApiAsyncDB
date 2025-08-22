@@ -1,0 +1,1 @@
+![Arquitectura](resources/arquitectura.jpeg)
